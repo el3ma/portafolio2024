@@ -45,31 +45,31 @@ body {
 }
 
 .header {
-    padding: 150px 15%;
+    padding: 350px 15%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .header__welcome {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .wrapper {
     display: flex;
     gap: 5px;
-    width: 750px;
+    width: 720px;
     height: 80px;
     box-sizing: content-box;
 
 }
 
 h1 {
-    font-size: 4.2rem;
+    font-size: 4rem;
 }
 
 .header__name {
-    font-size: 4.2rem;
+    font-size: 4rem;
     font-weight: 700;
     background: linear-gradient(135deg, #9D4DE2 6.66%, #568ADA 85.61%);
     background-clip: text;
@@ -122,12 +122,12 @@ h1 {
 }
 
 .header__text {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .header__logo img {
-    width: 370px;
-    height: 470px;
+    width: 350px;
+    
 
 }
 
@@ -235,7 +235,7 @@ h1 {
 
 /* skills */
 .skills{
-    padding: 50px 15%;
+    padding: 80px 15%;
 }
 .skills__tittle{
     font-size: 3.3rem;
@@ -246,4 +246,62 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     padding: 20px 0;
+}
+
+.contact{
+    padding: 80px 15%;    
+}
+
+.contact__text p{
+    font-size: 1.5rem;
+    padding: 0 10.5%;
+}
+.contact__text h3{
+    font-size: 2.5rem;
+    padding: 0 10.5%;
+}
+
+.contact__container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+.contact__form input{
+    width: 600px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    border: none;
+    background-color: #F8EFFF;
+    color: #24282B;
+}
+input[type=button]{
+    background-color: #5887DA;
+    color: #F8EFFF;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+input[type=button]:hover{
+    background-color: #2c4775;
+}
+.contact__form textarea{
+    width: 600px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    background-color: #F8EFFF;
+    color: #24282B;
+}
+.contact__box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.contact__box i{
+    font-size: 3.5rem;
 }
