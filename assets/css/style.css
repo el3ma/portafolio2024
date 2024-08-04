@@ -235,17 +235,22 @@ h1 {
 
 /* skills */
 .skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 80px 15%;
 }
 .skills__tittle{
     font-size: 3.3rem;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 .skills__container{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px 150px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .contact{
@@ -335,6 +340,18 @@ hr{
 }
 
 @media (max-width: 748px) {
+    .navbar{
+        display: block;
+        width: 100%;
+        padding: 0.9em;
+    }
+    .navbar__items{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #24282B;
+        width: 100%;
+    }
     .header{
         padding: 180px 5% 50px ;
         display: block;
@@ -390,5 +407,39 @@ hr{
     }
     .hobbies__box i{
         font-size: 1.85rem;
+    }
+
+    .parent{
+        width: 350px;
+        padding: 0 0.8em;
+    }
+
+    .skills__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px 40px;
+        
+    }
+    .contact{
+        padding: 1em 0.8em;
+    }
+    .contact__container{
+        display: block;
+    }
+    .contact__form{
+        width: 100%;
+    }
+    .contact__form textarea{
+        width: 100%;
+    }
+
+    hr{
+        margin: 0 10px;
+    }
+
+    footer{
+        display: block;
+        gap: 10px;
+        text-align: center;
     }
 }
