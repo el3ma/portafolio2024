@@ -17,7 +17,12 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/index.js"></script>
     <title>Portafolio Emanuel Astudillo</title>
 </head>
 
@@ -27,8 +32,12 @@
         <div class="navbar__logo">
             <img src="./assets/img/Logo-ema.svg" alt="logo" width="35px">
             <span><strong>Emanuel Astudillo</strong></span>
+            <button id="btn-menu" class="btn-menu">
+                <ion-icon name="menu-outline" class="menu-icon" id="menu-icon" size="large"></ion-icon>
+                <ion-icon name="close-outline" class="close-icon" id="close-icon" size="large"></ion-icon>
+            </button>
         </div>
-        <div class="navbar__items">
+        <div class="navbar__items" id="navItems">
             <span>Home</span>
             <span>Sobre mí</span>
             <span>Font-End</span>
@@ -53,13 +62,13 @@
             <p class="header__text">puedo ayudarte a diseñar tu página web</p>
         </div>
         <div class="header__logo">
-            <img src="./assets/img/logo_Ema_grande.svg" alt="logo" >
+            <img src="./assets/img/logo_Ema_grande.svg" alt="logo">
         </div>
     </header>
 
     <!-- SOBRE MÍ -->
     <section class="about">
-        
+
         <div class="about__container">
             <div class="about__img">
                 <img src="./assets/img/me_Ema.svg" alt="">
@@ -156,7 +165,7 @@
                     d="M105 7.04395H61.5125L52.5 22.5752L43.4875 7.04395H0L52.5 97.9564L105 7.04395ZM52.5 61.6002L22.575 9.75645H41.9563L52.5 28.0439L63.0437 9.75645H82.425L52.5 61.6002Z"
                     fill="#4FC08D" />
             </svg>
-        <!-- </div>
+            <!-- </div>
         <div class="skills__container"> -->
             <svg xmlns="http://www.w3.org/2000/svg" width="105" height="105" viewBox="0 0 105 105" fill="none">
                 <g clip-path="url(#clip0_1270_52)">
@@ -201,9 +210,9 @@
     </section>
 
     <section class="contact">
-        
+
         <div class="contact__container">
-            <div >
+            <div>
                 <div class="contact__text">
                     <p>Sin miedo,</p>
                     <h3>Escríbeme</h3>
